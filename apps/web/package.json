@@ -1,0 +1,9 @@
+{
+  "name":"@giba/web",
+  "version":"0.0.1-lab",
+  "private":true,
+  "type":"module",
+  "scripts":{"dev":"vite","build":"vite build"},
+  "dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"^5.0.0","react":"latest","react-dom":"latest"},
+  "devDependencies":{"@types/react":"latest","@types/react-dom":"latest"}
+}
