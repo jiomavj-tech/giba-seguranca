@@ -2,6 +2,7 @@ import type {
   DeviceConnector, DeviceConnection, DiscoveredDevice, DeviceIdentity, DeviceHealth
 } from "@giba/core";
 import type { Capability } from "@giba/shared";
+export { FakeDvrSimulator } from "./simulator.js";
 
 export class FakeSecurityConnector implements DeviceConnector {
   readonly id = "fake";
@@ -18,19 +19,14 @@ export class FakeSecurityConnector implements DeviceConnector {
   }
 
   async identify(_connection: DeviceConnection): Promise<DeviceIdentity> {
-    return {
-      manufacturer: "Giba Lab",
-      model: "Fake DVR 4CH",
-      serial: "FAKE0001",
-      firmware: "0.0.1-LAB"
-    };
+    return { manufacturer:"Giba Lab", model:"Fake DVR 4CH", serial:"FAKE0001", firmware:"0.0.1-LAB" };
   }
 
   async getCapabilities(_connection: DeviceConnection): Promise<Capability[]> {
-    return ["LIVE_VIEW", "MAIN_STREAM", "SUB_STREAM", "SNAPSHOT"];
+    return ["LIVE_VIEW","MAIN_STREAM","SUB_STREAM","SNAPSHOT"];
   }
 
   async getHealth(_connection: DeviceConnection): Promise<DeviceHealth> {
-    return { status: "ONLINE", checkedAt: new Date().toISOString() };
+    return { status:"ONLINE", checkedAt:new Date().toISOString() };
   }
 }
