@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev:gateway": "pnpm --filter @giba/gateway dev",
+    "dev:api": "pnpm --filter @giba/api dev",
+    "dev:web": "pnpm --filter @giba/web dev",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
