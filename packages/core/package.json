@@ -1,0 +1,1 @@
+{"name":"@giba/core","version":"0.0.1-lab","type":"module","main":"src/index.ts","dependencies":{"@giba/shared":"workspace:*"}}
