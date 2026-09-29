@@ -1,0 +1,14 @@
+{
+  "name": "giba-seguranca",
+  "version": "0.0.1-lab",
+  "private": true,
+  "scripts": {
+    "dev:gateway": "pnpm --filter @giba/gateway dev",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
