@@ -1,0 +1,12 @@
+{
+  "name":"@giba/api",
+  "version":"0.0.1-lab",
+  "type":"module",
+  "scripts":{"dev":"tsx src/index.ts"},
+  "dependencies":{
+    "@giba/connector-fake":"workspace:*",
+    "fastify":"^5.0.0",
+    "@fastify/websocket":"^11.0.0"
+  },
+  "devDependencies":{"tsx":"^4.0.0"}
+}
