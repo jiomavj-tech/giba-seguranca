@@ -1,0 +1,1 @@
+{"name":"@giba/gateway","version":"0.0.1-lab","type":"module","scripts":{"dev":"tsx src/index.ts"},"dependencies":{"@giba/core":"workspace:*","@giba/connector-fake":"workspace:*"},"devDependencies":{"tsx":"^4.0.0"}}
