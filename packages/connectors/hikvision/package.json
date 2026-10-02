@@ -1,0 +1,7 @@
+{
+  "name":"@giba/connector-hikvision",
+  "version":"0.0.1-lab",
+  "type":"module",
+  "main":"src/index.ts",
+  "dependencies":{"@giba/core":"workspace:*","@giba/shared":"workspace:*"}
+}
